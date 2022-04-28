@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <!-- Tags básicas -->
+  <meta charset="utf-8">
+  <meta name="author" content="David Vega (stackiller)">
+  <meta name="description" content="Criação de Sites">
+  <meta name="keywords" content="Sites, Sistemas, Blogs, Suporte Técnico, Desenvolvimento Web">
+
+  <!-- Título -->
+  <title> ubaweb </title>
+   
+  <!-- Tags para mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik:400,500,700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/materialize/materialize.css">
+  <link rel="stylesheet" href="css/custom/style.css">
+
+  <!-- Icones -->
+  <link rel="stylesheet" href="css/fonts/fontawesome/css/all.css">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+
+    <!-- nav One -->
+    <div id="nav-one" class="nav-one sub-nav column">
+      <div class="nav-wrap row">
+        <!-- nome da empresa -->
+        <div class="nav-static">
+          <a href="#" class="nav-title">
+            ubaweb
+          </a>
+          <a href="#" id="nav-toggler" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+        </div>
+
+        <!-- contatos do navbar -->
+        <div id="nav-contacts" class="nav-contacts">
+          <a class="nav-contact" href="#"><i class="fab fa-facebook-square"></i></a>
+          <a class="nav-contact" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="nav-contact" href="#">
+            <i class="fab fa-whatsapp"></i>
+            <p class="nav-contact-d" style="display: block;"> (12) 99710-9313 </p>
+          </a>
+          <a class="nav-contact" href="#">
+            <i class="far fa-envelope"></i>
+            <p class="nav-contact-d" style="display: block;">
+              ubaweb@protonmail.com
+            </p>
+          </a>          
+          <a class="nav-contact" href="#">
+            <i class="fas fa-clock"></i>
+            <p class="nav-contact-d" style=""> Seg - Sex: 08:00 - 18:00 </p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar de navegação -->
+    <div id="nav-two" class="nav-two sub-nav column">
+      <div class="nav-wrap row">
+        <!-- nome da empresa -->
+         <div class="nav-static">
+          <a href="#" class="nav-title">
+            ubaweb
+          </a>
+        </div>
+
+        <!-- links de navegação -->
+        <div id="nav-links" class="nav-links">
+          <a href="#"> Início </a>
+          <a href="#about2"> Sobre nós </a>
+          <a href="#services"> Serviços </a>
+          <a href="#portif"> Portifólio </a>
+          <a href="#contact"> Contato </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidenav para celulares -->
+  <ul id="slide-out" class="sidenav">
+    <li><a href="#"> Início </a></li>
+    <li><a href="#about2"> Sobre nós </a></li>
+    <li><a href="#services"> Serviços </a></li>
+    <li><a href="#portif"> Portifólio </a></li>
+    <li><a href="#contact"> Contato </a></li>
+  </ul>
+
+  <!-- Float action button (FAB) -->
+  <div id="fab-whats" class="fab fixed-action-btn">
+    <a class="fab-btn btn-floating btn-large" href="https://api.whatsapp.com/send?phone=+5512997109313&text=Olá, soube dos seus serviços através do site">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Topo do site (header) -->
+  <div class="head">
+    <div class="head-wrap row">
+      
+      <div class="head-area">
+        <!-- text area -->
+        <div class="head-text column">
+          <h6 class="head-t title" style="padding: 15px; margin: 0">
+            <span><i class="fas fa-map-marker-alt" style="margin-right: 10px"></i></span>
+            Ubatuba
+          </h6>
+          <h4 class="head-t title"> Somos a solução para seu negócio </h4>
+          <!-- <h4 class="head-t title"> Somos sua agência de criação de sites </h4> -->
+          <hr class="divisor divisor-dark">
+          <h5 class="head-sub subtitle">
+            Sua agência de criação de sites
+          </h5>
+          <a class="waves-effect waves-light btn btn-solid" href="#contact"> Entre em Contato Conosco </a>
+        </div>
+
+
+        <div class="scrollButton column">
+          <a href="https://api.whatsapp.com/send?phone=+5512997109313&text=Olá, soube dos seus serviços através do site">
+            <!-- <i class="fa-solid fa-arrow-down"></i> -->
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>        
+      </div>
+
+<!--       <div class="contactForm">
+        <div class="contactForm-w column">
+          <h4 class="title-medium"> Tire todas suas dúvidas conosco. </h4>
+
+          <form action="" method="">
+            <div class="row">
+              <input type="text" name="" placeholder="Nome" required>
+              <input type="email" name="" placeholder="Email" required>
+            </div>
+            <div class="row">
+              <input type="tel" name="" placeholder="Telefone com DDD">
+              <input type="text" name="" placeholder="Empresa">
+            </div>
+
+            <select name="" required="">
+              <option value=""> O que você precisa ? </option>
+              <option value=""> Site Institucional </option>
+              <option value=""> Sistemas </option>
+              <option value=""> Logos </option>
+              <option value=""> Outros </option>
+            </select>
+
+            <select name="" required>
+              <option value=""> Qual período você quer ser contatado ? </option>
+              <option value=""> De manhã </option>
+              <option value=""> De tarde </option>
+            </select>
+
+            <button type="submit">
+              <a href=""> PEDIR ORÇAMENTO </a>
+            </button>
+          </form>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- Sobre -->
+<!--   <div id="about" class="about column">
+    <div class="about-wrap">
+      <div class="about-right">
+        <h4 class="title about-t"> Quem Somos  nós ? </h4>
+        <hr class="divisor-dark divisor">
+        <p id="about-desc" class="about-desc">
+          Bem, em geral, somos uma empresa de desenvolvimento web, focada
+          na solução e projeção de idéias, seja de algo que existe,
+          como sites, sistemas, etc, ou algo totalmente novo,
+          o que nos incentiva é poder ajudar nossos clientes,
+          a se tornarem cada vez mais eficientes, em todos aspectos.
+        </p>
+      </div>
+    </div>
+  </div> -->
+  
+  <!-- Nosso Objetivo -->
+  <div id="about2" class="about about2 column">
+    <div class="about-wrap row">
+      <div class="about-right column">
+        <h4 class="title about-t"> Quem Somos ?
+        </h4>
+        <hr class="divisor-dark divisor">
+        <p class="about-desc">
+          Bem, em geral, somos uma empresa de desenvolvimento web de Ubatuba,
+          focada na solução e projeção de idéias, seja de algo existente,
+          como: sites, sistemas, etc, ou algo totalmente novo.<br>
+          O que nos incentiva, é poder ajudar outras pessoas a tornarem
+          seus processos de gerenciamento cada vez mais dinâmicos e eficientes,
+          assim como a comunicação com seus clientes
+        </p>
+      </div>
+      <div class="about-left">
+        <img src="imgs/about/about.png">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Serviços -->
+  <div id="services" class="services column">
+    <div class="services-wrap column">
+      <h4 class="title services-t"> Nossos serviços </h4>
+      <hr class="divisor divisor-dark">
+      <h5 class="subtitle sub-center services-sub"> Temos muito a oferecer, mas os principais são: </h5>
+
+      <div class="services-cards row">
+
+       <div class="service-card shadow">
+          <div class="service-img"></div>
+          <div class="service-desc">
+            <h5 class="service-title"> Sites </h5>
+            <p>
+              É através dele que é possível fidelizar e alcançar novos clientes,
+              nos dias atuais, ter um site se tornou algo essêncial para divulgar e alavancar
+              qualquer negócio e ou idéia, justamente pelo fato das pessoas estarem compartilhando
+              e consumindo cada vez mais informações
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card shadow">
+          <div class="service-img"></div>
+          <div class="service-desc">
+            <h5 class="service-title"> Sistemas </h5>
+            <p>Agilidade e Organização, duas qualidades que sempre devem andar juntas com
+            seu negócio. Ter uma boa gestão, significa mais dinheiro e tempo economizados,
+            por isso ter um bom sistema se torna necessário para que seu negócio
+            e ou idéia cresça.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card shadow">
+          <div class="service-img"></div>
+          <div class="service-desc">
+            <h5 class="service-title"> Blogs </h5>
+            <p>
+              Ter um blog se torna necessário, quando se deseja manter os clientes
+              informados acerca dos assuntos tratados pelo seu negócio ou produto.
+              Gerar conteúdo para leitura, reforça a credibilidade da sua imagem aos clientes,
+              e ajuda a classificar seu site nos resultados de busca, e por consequência atrair novos públicos
+            </p>
+          </div>
+        </div>
+
+        <div class="service-card shadow">
+          <div class="service-img"></div>
+          <div class="service-desc">
+            <h5 class="service-title"> Suporte Técnico </h5>
+            <p> Oferecemos isso como um dos nossos benefícios.<br>Suporte técnico, 24 hrs / 7 dias por semana, ou seja, pode contar conosco, sempre que precisar resolver algo </p>
+          </div>
+        </div>
+
+      </div>
+    
+    </div>
+  </div>
+
+  <!-- Como funciona -->
+  <div id="h-works" class="h-works">
+    <div class="h-works-w column">
+      <h4 class="h-works-t title">
+        E então, como funciona ?
+      </h4>
+      <hr class="divisor divisor-dark">
+      <h5 class="h-works-sub subtitle sub-center">
+        São quatro etapas desde a contratação até a entrega do projeto
+      </h5>
+
+      <div class="h-stages row">
+        <div class="h-stage column">
+          <i class="fa-solid fa-comments"></i>
+          <h5 class="h-stage-t"> Conversa </h5>
+          <p class="h-stage-desc">
+            Sem dúvidas, esse é o coração do projeto, pois é onde se define quais as necessidades
+            que devem ser atendidas, e as informações relevantes a serem consideradas
+          </p>
+        </div>
+
+        <div class="h-stage column">
+          <i class="fa-solid fa-comments-dollar"></i>
+          <h5 class="h-stage-t"> Orçamento </h5>
+          <p class="h-stage-desc">
+            Nessa etapa, conversamos sobre quais os meios de pagamento que serão utilizados,
+            parcelamento, etc, uma boa hora para tomar um cafézinho e conversar mais :) 
+          </p>
+        </div>
+
+        <div class="h-stage column">
+          <i class="fas fa-pencil-ruler"></i>
+          <h5 class="h-stage-t"> Início do Projeto </h5>
+          <p class="h-stage-desc">
+            Após decidido as necessidades que o projeto deve atender e as informações
+            relevantes que devem ser consideradas para execução do mesmo, o projeto tem início
+          </p>
+        </div>
+
+        <div class="h-stage column">
+          <i class="far fa-calendar-check"></i>
+          <h5 class="h-stage-t"> Entrega </h5>
+          <p class="h-stage-desc">
+            Sempre nos esforçamos em entregar o melhor, e dentro do prazo. Gotamos de ser referência, fazendo uso das melhores tecnologias disponíveis no mercado digital, afim de deixar nossos clientes mais que satisfeitos, felizes
+          </p>
+        </div>
+      </div>
+      <a class="waves-effect waves-light btn btn-solid h-stage-btn" href="#contact">
+        Tire todas suas dúvidas
+      </a>
+    </div>
+  </div>
+
+  <!-- Depoimentos -->
+<!--   <div class="test">
+    <div class="test-w">
+
+      <div id="test-carousel" class="test-carousel carousel">
+
+        <div class="test-item carousel-item">
+          <div class="test-card card">
+            <div class="test-ctn card-content">
+              <p class="test-desc"> Te amo demais, x) </p>
+              <p class="test-name" style="font-weight: bold"> Morzinho </p>
+              <div class="test-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-item carousel-item">
+          <div class="test-card card">
+            <div class="test-ctn card-content">
+              <p class="test-desc"> Recomendo, muito atencioso. </p>
+              <p class="test-name" style="font-weight: bold"> Keanu </p>
+              <div class="test-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-item carousel-item">
+          <div class="test-card card">
+            <div class="test-ctn card-content">
+              <p class="test-desc"> Pode contratar, rs </p>
+              <p class="test-name" style="font-weight: bold"> Kadu </p>
+              <div class="test-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Informações de trabalhos -->
+  <div id="i-works" class="i-works">
+    <div class="i-works-w">
+      <div class="i-works-datas row">
+        
+        <div class="i-item">
+          <h3 class="i-d1"> + 20 </h3>
+          <h5 class="i-d2"> Projetos Concluídos </h5>
+        </div>
+        
+        <div class="i-item">
+          <h3 class="i-d1"> 30 </h3>
+          <h5 class="i-d2"> Clientes Satisfeitos </h5>
+        </div>
+      
+        <div class="i-item">
+          <h3 class="i-d1"> 10 </h3>
+          <h5 class="i-d2"> Colaboradores </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portifólio -->
+  <div id="portif" class="portif">
+    <div class="portif-w">
+      <h4 class="portif-t title"> Portifólio </h4>
+        <hr class="divisor divisor-dark">
+      <h5 class="portif-sub subtitle"> Alguns de nossos projetos finalizados: </h5z>
+      <div class="divisor l-divisor"></div>
+      <div id="portif-photos" class="portif-photos row"></div>
+    </div>
+  </div>
+
+  <!-- Contacts -->
+  <div id="contact" class="contact">
+    <div class="contact-w">
+      <div class="contact-contacts row">
+        <div class="contact-item column">
+          <i class="contact-icon fab fa-whatsapp"></i>
+          <h4 class="contact-t title"> Telefones </h4>
+          <p class="contact-desc">
+            (12) 99710-9313
+          </p>
+        </div>
+
+        <div class="contact-item column">
+          <i class="contact-icon far fa-envelope"></i>
+          <h4 class="contact-t title"> Email </h4>
+          <p class="contact-desc">
+            david.vegasc@gmail.com
+          </p>
+        </div>
+
+        <div class="contact-item column">
+          <i class="contact-icon fas fa-map-marker-alt"></i>
+          <h4 class="contact-t title"> Onde estamos </h4>
+          <p class="contact-desc">
+            Ubatuba - SP
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Contacts -->
+  <div id="sContacts" class="sContact">
+    <div class="sContact-w column">
+      <h5 class="sContact-t title"> Siga-nos nas redes sociais </h5>
+      <div class="sContact-contacts row">
+        <a class="sContact-item" href="https://www.facebook.com/gwaltopadraoo">
+          <i class="sContact-icon fab fa-facebook-square"></i>
+        </a>
+        <a class="sContact-item" href="https://www.instagram.com/gwaltopadrao/">
+          <i class="sContact-icon fab fa-instagram"></i>
+        </a>
+          <a class="sContact-item" href="https://www.youtube.com/channel/UC538rOaZoEqoJIojycPtlKA">
+            <i class="sContact-icon fab fa-youtube"></i>
+          </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-w column">
+
+      <div id="footer-dev1" class="footer-dev row">        
+        <h6 class="footer-t"> © Vega Tech - Todos os Direitos Reservados </h6>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/stackiller" class="footer-slink">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.instagram.com/stackiller/" class="footer-slink">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.github.com/stackiller" class="footer-slink">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- materialize -->
+  <script src="js/materialize/materialize.js"></script>
+  <script src="js/materialize/init.js"></script>
+
+  <!-- custom js -->
+  <script src="js/custom/navbar.js"></script>
+  <script src="js/custom/header.js"></script>
+  <script src="js/custom/about.js"></script>
+  <script src="js/custom/portifolio.js"></script>
+</body>
+</html>
