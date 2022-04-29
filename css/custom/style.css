@@ -36,21 +36,26 @@ body, div, button, ul, li, a, p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--textBold-color);
+  color: var(--text-color);
   font-family: 'Rubik', sans-serif;
   font-style: bold;
   /*margin: 10px 0px;*/
 }
 
-p {
+p, a {
   font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
 }
 
 /* títulos e subtítulos */
 .title {
   border: 1px solid #00000024;
   margin: 15px 0px;
-  font-weight: normal;
+  font-weight: bold;
 }
 .subtitle {
   color: var(--subtitle-color);
@@ -60,11 +65,6 @@ p {
 /* Ajuste de elementos */
 div, li, ul, p {
   list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  letter-spacing: 0.1rem;
 }
 
 /* Cores  */
@@ -153,7 +153,7 @@ a {
 /* links do nav-wrap */
 .navbar .sub-nav
 .nav-wrap a {
-  padding: 20px;
+  padding: 15px 30px;
   text-align: center;
   transition: 0.25s ease-out;
   color: white;
@@ -170,25 +170,6 @@ a:hover {
   transition: 0.25s ease-out;
   /*border-bottom: 1px solid rgba(132, 132, 132, 0.24);*/
   font-size: 1.10rem;
-}
-
-/* sub nav brand */
-.sub-nav .nav-wrap
-.nav-static .nav-title {
-  padding: 5px 15px;
-  font-weight: normal;
-}
-.sub-nav .nav-wrap
-.nav-static .nav-title h5 {
-  color: var(--primary);
-}
-.sub-nav .nav-wrap
-.nav-static .nav-title h5 {
-  padding: 5px 15px;
-  color: #fff;
-  background: var(--textBold-color);
-  border-radius: 4px;
-  /*font-style: italic;*/
 }
 
 /* navbar One */
@@ -215,6 +196,7 @@ a:hover {
   display: none;
   font-size: 1.2rem;
   color: white;
+  padding: 0 20px;
 }
 @media only screen and (max-width: 1024px) {
   .nav-one .nav-wrap
@@ -226,12 +208,10 @@ a:hover {
 /* Título */
 .sub-nav .nav-wrap
 .nav-static .nav-title {
-  padding: 5px 15px;
   color: #fff;
-  background: var(--textBold-color);
-  border-radius: 4px 4px 1px 4px;
   font-size: 1.5rem;
   font-weight: normal;
+  padding-left: 0;
   /*font-style: italic;*/
   /*text-decoration-line: underline;*/
 }
@@ -324,6 +304,11 @@ a:hover {
   justify-content: flex-start;
 }
 
+.nav-two .nav-wrap
+.nav-links a:nth-child(1) {
+  padding-left: 0;
+}
+
 /* Navbar solido */
 .nav-solid {
   z-index: 100;
@@ -341,7 +326,6 @@ a:hover {
 }
 
 .nav-solid .nav-wrap .nav-links {
-  /*flex-grow: 1;*/
   justify-content: flex-end;
 }
 
@@ -447,11 +431,11 @@ a:hover {
 /* Título */
 .head .head-wrap
 .head-text .head-t {
-  padding: 20px;
-  background: #ffffff85;
-  border-radius: 4px;
-  color: #303030;
+  padding: 5px 0;
+  border: none;
+  color: white;
   text-align: left;
+  text-shadow: -1px 1px rgba(0 0 0 / 42%);
 }
 
 /* Título */
@@ -725,7 +709,6 @@ a:hover {
 @media only screen and (max-width: 1000px) {
   .services .services-wrap .services-cards
   .service-card .service-desc {
-    text-align: center;
     width: 100%;
   }
 }
@@ -837,6 +820,12 @@ a:hover {
 .h-works-sub {
   text-align: left;
   font-weight: normal;
+}
+
+/* Subtítulo da parte superior */
+.h-works .h-works-w .h-works-subTop {
+  margin: 0; border:none;
+  color: var(--primary-light);
 }
 
 /* Estágios */
@@ -953,7 +942,7 @@ div.i-works {
 .i-works-datas .i-item
 .i-d1 {
   color: white;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /* Subtítulo do card */
