@@ -3,6 +3,10 @@
   using materializes && custom Css
 */
 
+/* Fontes Roboto - Rubik */
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@400;500;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Rubik&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -31,13 +35,13 @@ body { margin: 0; }
 
 /* Texto */
 body, div, button, ul, li, a, p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: var(--text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--text-color);
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: bold;
   /*margin: 10px 0px;*/
 }
@@ -61,6 +65,10 @@ a {
   color: var(--subtitle-color);
   font-weight: normal;
 }
+
+.text-shadow { text-shadow: 0 4px 8px rgba(0 0 0 / 25%); }
+
+.shadow { box-shadow: 0 4px 4px rgba(0 0 0 / 25%); }
 
 /* Ajuste de elementos */
 div, li, ul, p {
@@ -87,11 +95,11 @@ div, li, ul, p {
 
 /* Buttons */
 .btn {
+  z-index: 1;
   border-radius: 2px;
   padding: 5px 20px;
   margin: 15px 0;
   height: auto;
-  box-shadow: none;
   background: linear-gradient(to bottom, var(--primary), var(--primary-dark));
   /*border: 1px solid var(--primary-dark);*/
 }
@@ -104,13 +112,10 @@ div, li, ul, p {
 
 /* Divisores */
 .divisor {
-  width: 72px;
-  /*background: var(--primary);*/
+  width: 80px;
   height: 3px;
   border: none;
-  /*border-radius: 1px;*/
-  /*border-radius: 4px;*/
-  /*margin: 25px 0;*/
+  border-radius: 8px;
 }
 
 .divisor-dark {
@@ -129,11 +134,8 @@ div, li, ul, p {
 
 /* Navbar */
 .navbar {
-  /*z-index: 100;*/
   width: 100%;
   height: 100%;
-  /*position: fixed;*/
-  /*top: 0;*/
 }
 
 /* wrapper do sub-nav */
@@ -173,7 +175,10 @@ a:hover {
 }
 
 /* navbar One */
-.nav-one { background: var(--text-color); }
+.nav-one {
+  z-index: 10;
+  background: var(--text-color);
+}
 
 /* Parte estática do navbar de apresentação */
 .nav-one .nav-wrap
@@ -330,11 +335,21 @@ a:hover {
 }
 
 /* nav hidden */
-.hidden {
+.nav-hidden {
   display: none !important;
 }
-.visible {
+.nav-visible {
   visibility: visible !important;
+}
+@media only screen and (max-width: 1000px) {
+  /* nav hidden */
+  .nav-hidden {
+    display: block !important;
+    position: fixed;
+  }
+  .nav-visible {
+    visibility: visible !important;
+  }
 }
 
 /* Sidenav */
@@ -373,9 +388,9 @@ a:hover {
 /* Header */
 .head {
   width: 100%;
-  height: 60vh;
-  max-height: 600px;
-  /*min-height: 200px;*/
+  height: 440px;
+  /*max-height: 600px;*/
+  /*min-height: 600px;*/
   background-image: url('../../imgs/header/0.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -384,8 +399,9 @@ a:hover {
   background-clip: padding-box;
 }
 
-@media only screen and (max-height: 800px) {
+@media only screen and (max-width: 800px) {
   .head {
+    height: 100vh;
     min-height: 500px;
   }
 }
@@ -393,11 +409,7 @@ a:hover {
 .head .head-wrap {
   width: 100%;
   height: 100%;
-  padding: 0 10px;
-  /*padding: 0 100px;*/
-  /*background: linear-gradient(to top, #404040, #404040bf);*/
   background: #404040bf;
-  justify-content: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -407,34 +419,29 @@ a:hover {
 
 .head .head-wrap
 .head-area {
-  width: 80%;
-  max-width: 1280px;
+  width: 100%;
   height: 100%;
 }
 @media only screen and (max-width: 1024px) {
-  .head .head-wrap .head-area {
-    padding: 0px 30px;
-    width: 100%;
-  }
+  .head .head-wrap .head-area {}
 }
 
 /* Área principal */
 .head .head-wrap
 .head-text {
-  align-items: flex-start;
   width: 100%;
   height: 100%;
-  margin: auto;
   text-align: center;
-/* align-items: center; */}
+}
 
 /* Título */
 .head .head-wrap
 .head-text .head-t {
-  padding: 5px 0;
+  width: 100%;
+  padding: 20px 0;
   border: none;
   color: white;
-  text-align: left;
+  background: rgba(0 0 0 / 30%);
 }
 
 /* Título */
@@ -447,25 +454,31 @@ a:hover {
 .head .head-wrap
 .head-text .head-sub {
   color: white;
-  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  /*text-align: left;*/
 }
 
 /* Botão de scrooll do header */
 .head .head-wrap
 .scrollButton {
-  font-size: 1.5rem;
   width: 80px;
   height: 80px;
+  margin: auto;
   border-radius: 50%;
   transform: translateY(-35px);
   background: linear-gradient(to bottom, var(--primary), var(--primary-dark));
   border: 10px solid #404040;
 }
+.head-wrap .scrollButton a {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
 
 .head .head-wrap
 .scrollButton i {
   font-size: 2rem;
-  margin-top: 5px;
   margin-left: 3px;
   color: #efefef;
 }
@@ -812,6 +825,7 @@ a:hover {
   background: #1c6db726;
   padding: 15px 20px;
   border-radius: 4px;
+  border: none;
 }
 
 /* Subtítulo */
@@ -854,22 +868,22 @@ a:hover {
 /* Icone do estágio */
 .h-works .h-works-w
 .h-stages .h-stage i {
-  margin-top: 10px;
+  margin: 10px 0;
   border-radius: 4px;
-  padding: 38px;
+  /*padding: 38px;*/
   /*border: 3px solid var(--primary);*/
   /*background: none;*/
-  background: var(--primary);
-  /*color: var(--primary);*/
-  color: white;
-  font-size: 2.5rem;
+  /*background: var(--primary);*/
+  color: var(--primary);
+  /*color: white;*/
+  font-size: 4.5rem;
   transition: 0.25s ease-out;
-  box-shadow: 0px 1px 4px #959595;
+  /*box-shadow: 0px 1px 4px #959595;*/
 }
 .h-works .h-works-w
 .h-stages .h-stage:hover i {
-  color: white;
-  background: var(--primary);
+  /*color: white;*/
+  /*background: var(--primary);*/
   transform: translateY(-10px);
 }
 
@@ -977,6 +991,7 @@ div.i-works {
   background: #1c6db726;
   padding: 15px 20px;
   border-radius: 4px;
+  border: none;
 }
 .portif .portif-w .portif-sub {}
 

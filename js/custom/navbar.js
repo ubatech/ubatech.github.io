@@ -21,9 +21,9 @@ function matches(tag, className) {
 
 // elementos para checar quando houver o scroll
 var sections_tags = [
-  ['nav-two', 'nav-one', 'fab-whats'],
-  [0, 0, 200],
-  [['nav-solid', 'shadow'], ['hidden'], ['fab-visible']]
+  ['fab-whats', 'nav-two', 'nav-one'],
+  [200, 1000, 1000],
+  [['fab-visible'], ['nav-solid', 'shadow'], ['nav-hidden']]
 ];
 
 // sempre que a página ser scrolled chamar a função onScroll
