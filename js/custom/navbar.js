@@ -22,7 +22,7 @@ function matches(tag, className) {
 // elementos para checar quando houver o scroll
 var sections_tags = [
   ['fab-whats', 'nav-two', 'nav-one'],
-  [200, 1000, 1000],
+  [200, 500, 500],
   [['fab-visible'], ['nav-solid', 'shadow'], ['nav-hidden']]
 ];
 
